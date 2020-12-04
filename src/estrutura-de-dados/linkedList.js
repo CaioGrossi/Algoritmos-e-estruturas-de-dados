@@ -10,7 +10,7 @@ class Node {
     }
 }
 
-class LinkedList {
+export default class LinkedList {
 
     constructor(equalsfn = defaultEqualsfn) {
         this.count = 0;
@@ -101,6 +101,14 @@ class LinkedList {
 
     size() {
         return this.count;
+    }
+
+    isEmpty() {
+        if (this.count = 0) {
+            return true;
+        }
+
+        return false;
     }
 
     toString() {
