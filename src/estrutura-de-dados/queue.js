@@ -1,3 +1,8 @@
+/*
+    Queue é uma estrutua de dadoa que pode ou não ser de memória sequencial. A particularidade da Queue é a regra que ela segue para a remoção e adição de elementos,
+    sendo a FIFO (first in first out). A Queue so aceita adições no seu final e so aceita remoções no seu começo, por isso o primeiro a entrar é o primeiro a sair.
+*/
+
 class Queue {
     constructor() {
         this.count = 0;

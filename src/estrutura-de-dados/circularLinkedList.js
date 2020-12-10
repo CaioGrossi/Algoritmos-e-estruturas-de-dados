@@ -1,3 +1,8 @@
+/*
+    Essa é mais uma implementação de uma LinkedList só que dessa vez circular. A única diferença é que a propriedade do ultimo Nó da lista que apontaria
+    para NULL aponta para o primeiro Nó da lista. Por isso o nome de circular.
+*/
+
 function defaultEqualsfn(a,b) {
     return a === b;
 }

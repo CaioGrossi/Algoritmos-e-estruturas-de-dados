@@ -1,3 +1,8 @@
+/*
+    Deque é uma estrutura de dados que é como se fosse a mistura de uma Stack e uma Queue. Segue duas regras de remoção e adição, elementos podem ser adicionados no final 
+    e no começo da fila e o mesmo vale para remoções.
+*/
+
 class Deque {
     constructor() {
         this.items = {};

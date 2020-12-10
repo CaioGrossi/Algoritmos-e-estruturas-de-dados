@@ -1,3 +1,10 @@
+/* 
+    LinkedList é uma estrutura de dados bastante utilizada que consiste em uma entidade lista que  tem uma propriedade que aponta para o primeiro elemento dessa
+    lista que é um Nó. Cada elemento de uma lista é chamado de Nó e possui duas propriedades em uma LinkedList padrão, que são eles o valor do nó e uma propriedade que aponta 
+    para o  próximo nó da lista. Uma lista não segue regras para remoção ou adição de elementos, podendo ser adicionados no final, começo ou por posição. No geral, uma lista é 
+    somente uma estrutura de dados de memória não sequencial que tem como dados Nós que sempre apontam para o proximo Nó, até chegar ao fim da lista no qual vai apontar 
+    para NULL e claro a própria lista tem uma propriedade que aponta para o seu primeiro Nó.
+*/
 
 function defaultEqualsfn(a,b) {
     return a === b;

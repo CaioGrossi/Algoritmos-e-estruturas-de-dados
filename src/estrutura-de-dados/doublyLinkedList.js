@@ -1,3 +1,9 @@
+/*
+    Uma doublyLinkedList é basicamente uma LinkedList só que dessa vez a lista tem uma propriedade que aponta para o seu primeiro e ultimo elemento e cada Nó de uma 
+    doublyLinkedList tem uma propriedade a mais que é a que aponta para o Nó anterior, sendo que agora um Nó aponta para o proximo Nó e o anterior. Isso facilita na
+    hora de percorrer a lista.
+*/
+
 function defaultEqualsfn(a,b) {
     return a === b;
 }

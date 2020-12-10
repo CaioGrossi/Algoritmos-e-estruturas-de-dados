@@ -1,3 +1,8 @@
+/*
+    Esta é basicamente uma implemtação da LinkedList só que com ordenação na opção de adicionar, ou seja, tudo que for adicionado na lista será em ordem de grandeza dos 
+    seus elementos.
+*/
+
 import LinkedList from './linkedList';
 
 function defaultCompare (a,b) {

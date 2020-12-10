@@ -1,3 +1,9 @@
+/* 
+    Set é uma estrutura de dados que somente adiciona elementos sem preocupar com a posição deles, não aceita elementos repetidos. Por ser um exemplo de conjuntos como é
+    na matemática ele tem operações de conjuntos como união (somar dois conjutos), diferença(remover um conjutos de outro) e interseção (pegar os elementos em comum dos dois
+    conjutos).
+*/
+
 class Set {
     constructor() {
         this.items = {};
