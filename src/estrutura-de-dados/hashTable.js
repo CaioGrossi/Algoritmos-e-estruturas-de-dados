@@ -1,3 +1,9 @@
+/*
+    HashTable é uma estrutura de dados bem parecida com Dictionary porem usa uma função de hash para criar um hashCode de acordo com a chave passada, fazendo o hashcode apontat
+    para o real valor do dado. Por ter uma função que gera um Hash, pode haver situações em que serão geradas a mesma chave para valores diferentes, assim tendo que
+    tratar de colisões.
+*/
+
 import ValuePair from '../utils/valuePair';
 
 export function defaultToString (item) {

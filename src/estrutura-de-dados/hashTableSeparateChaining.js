@@ -1,3 +1,9 @@
+/*
+    Essa é uma implementação da tabela hash só que com um tratamento de colisões (encadeamento separado). Esse tratamento consiste que para cada hashcode gerado, ele tenha
+    uma LinkedList correspondente a todas as chaves que ele criar. Assim, se for adicionar um elemento que gera uma chave que já existe, terá uma LinkedList para armazenar
+    esses valores na posição do hashcode.
+*/
+
 import LinkedList from './linkedList';
 import ValuePair from '../utils/valuePair';
 

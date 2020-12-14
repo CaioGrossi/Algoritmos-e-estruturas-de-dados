@@ -1,3 +1,8 @@
+/*
+    Dictionary é uma estrutuda de dados que tem como principal característica o armazenamento que é feito por meio de chave / valor. Toda a procura
+    e remoção nessa estrutura é feita com base na chave passada.
+*/
+
 import ValuePair from '../utils/valuePair';
 
 export function defaultToString (item) {
