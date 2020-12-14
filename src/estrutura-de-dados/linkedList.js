@@ -118,6 +118,10 @@ export default class LinkedList {
         return false;
     }
 
+    getHead() {
+        return this.head;
+    }
+
     toString() {
         if(this.head == null) {
             return '';
