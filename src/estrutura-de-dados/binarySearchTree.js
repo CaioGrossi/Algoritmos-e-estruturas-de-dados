@@ -134,13 +134,17 @@ class BinarySearchTree {
         if (node == null) {
           return undefined;
         }
-        if (this.compareFn(key, node.key) === Compare.LESS_THAN) {
+
+        if (this.compareFn(key, node.key) === -1) {
           node.left = this.removeNode(node.left, key);
           return node;
-        } if (this.compareFn(key, node.key) === Compare.BIGGER_THAN) {
+        }
+
+        if (this.compareFn(key, node.key) === 1) {
           node.right = this.removeNode(node.right, key);
           return node;
         }
+
         if (node.left == null && node.right == null) {
           node = undefined;
           return node;
