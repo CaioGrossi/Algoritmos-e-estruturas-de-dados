@@ -3,56 +3,56 @@
     sendo a FIFO (first in first out). A Queue so aceita adições no seu final e so aceita remoções no seu começo, por isso o primeiro a entrar é o primeiro a sair.
 */
 
-class Queue {
-    constructor() {
-        this.count = 0;
-        this.lowestCount = 0;
-        this.items = {};
+export default class Queue {
+  constructor() {
+    this.count = 0;
+    this.lowestCount = 0;
+    this.items = {};
+  }
+
+  enqueue(item) {
+    this.items[this.count] = item;
+    item.count++;
+  }
+
+  dequeue() {
+    if (this.isEmpty()) {
+      return undefined;
     }
 
-    enqueue(item) {
-        this.items[this.count] = item;
-        item.count++;
+    const result = this.items[this.lowestCount];
+    delete this.items[this.lowestCount];
+    this.lowestCount++;
+    return result;
+  }
+
+  peek() {
+    if (this.isEmpty()) {
+      return undefined;
     }
 
-    dequeue() {
-        if (this.isEmpty()) {
-            return undefined;
-        }
+    return this.items[this.lowestCount];
+  }
 
-        const result = this.items[this.lowestCount];
-        delete this.items[this.lowestCount];
-        this.lowestCount++;
-        return result;
+  size() {
+    return this.count - this.lowestCount;
+  }
+
+  isEmpty() {
+    return this.count - this.lowestCount == 0;
+  }
+
+  toString() {
+    if (this.isEmpty()) {
+      return "";
     }
 
-    peek() {
-        if(this.isEmpty()) {
-            return undefined;
-        }
+    let objString = `${this.items[this.lowestCount]}`;
 
-        return this.items[this.lowestCount];
+    for (let i = this.lowestCount + 1; i < this.count; i++) {
+      objString = `${objString}, ${this.items[i]}`;
     }
 
-    size() {
-        return this.count - this.lowestCount;
-    }
-
-    isEmpty() {
-        return this.count - this.lowestCount == 0
-    }
-
-    toString() {
-        if(this.isEmpty()) {
-            return '';
-        }
-
-        let objString = `${this.items[this.lowestCount]}`;
-
-        for (let i = this.lowestCount + 1; i < this.count; i++) {
-            objString = `${objString}, ${this.items[i]}`
-        }
-
-        return objString;
-    }
+    return objString;
+  }
 }
